@@ -1,6 +1,6 @@
-public class ShuttleSort {
-    public ShuttleSort() {}
-    public double[] sort(double[] array){
+class ShuttleSort {
+    ShuttleSort() {}
+    double[] sort(double[] array){
         for(int i=1;i<array.length;i++){
             for (int j=i;j>0 && array[j]<array[j-1];j--){
                 if (array[j]<array[j-1]){
@@ -12,10 +12,10 @@ public class ShuttleSort {
         }
         return array;
     }
-    public int[] sort(int[] array){
+    int[] sort(int[] array){
         return toInt(sort(toDouble(array)));
     }
-    public float[] sort(float[] array){
+    float[] sort(float[] array){
         return toFloat(sort(toDouble(array)));
     }
     private double[] toDouble(int[] n){

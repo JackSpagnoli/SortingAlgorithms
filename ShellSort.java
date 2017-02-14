@@ -1,15 +1,15 @@
 public class ShellSort {
     public ShellSort() {}
-    public double[] sort(double[] array){
+    double[] sort(double[] array){
         for (int l=2;l<array.length;l*=2){
 
         }
         return null;
     }
-    public int[] sort(int[] array){
+    int[] sort(int[] array){
         return toInt(sort(toDouble(array)));
     }
-    public float[] sort(float[] array){
+    float[] sort(float[] array){
         return toFloat(sort(toDouble(array)));
     }
     private double[] toDouble(int[] n){

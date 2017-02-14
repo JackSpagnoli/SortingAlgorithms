@@ -1,6 +1,6 @@
 public class QuickSort {
-    public QuickSort(){}
-    public double[] sort(double[] array){
+    QuickSort(){}
+    double[] sort(double[] array){
         double[] lp={},
                 mp={};
         double pivot = array[0];
@@ -19,10 +19,10 @@ public class QuickSort {
         }
         return new arrayAppend().addOn(new arrayAppend().addOn(lp, pivot),mp);
     }
-    public int[] sort(int[] array){
+    int[] sort(int[] array){
         return toInt(sort(toDouble(array)));
     }
-    public float[] sort(float[] array){
+    float[] sort(float[] array){
         return toFloat(sort(toDouble(array)));
     }
     private double[] toDouble(int[] n){
